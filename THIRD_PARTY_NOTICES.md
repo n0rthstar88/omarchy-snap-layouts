@@ -4,7 +4,7 @@ Everything in this repository is under the [MIT license](LICENSE), except as not
 
 ## hyprland-plugins (hyprbars)
 
-`extras/hyprbars/hyprbars-drag-events.patch` is a set of changes to `hyprbars/barDeco.cpp` from [hyprland-plugins](https://github.com/hyprwm/hyprland-plugins), and it quotes short sections of that file as context. No other part of hyprbars is included here. That code is under the following license:
+`extras/hyprbars/rebuild-hyprbars.sh` downloads [hyprland-plugins](https://github.com/hyprwm/hyprland-plugins) and adds a few lines to `hyprbars/barDeco.cpp` before building it on your machine. None of that code is stored here, apart from a patch to the same file in this repository's earlier history. The plugin you build is under the following license:
 
 ```text
 BSD 3-Clause License

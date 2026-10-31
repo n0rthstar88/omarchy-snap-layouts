@@ -17,6 +17,6 @@ Omarchy plugins run unsandboxed inside the shell, with your user's permissions. 
 - Commands the plugin passes to `hyprctl eval`, especially anything built from window data.
 - Loading `hook.lua` into Hyprland's Lua state.
 - Window titles and contents shown in snap assist thumbnails, which are visible on screen while it's open.
-- The optional hyprbars patch and `titlebars.lua`.
+- The optional `rebuild-hyprbars.sh`, which downloads and builds hyprland-plugins, and `titlebars.lua`.
 
 The plugin makes no network connections and stores nothing except the drag-to-snap setting in `~/.config/omarchy/shell.json`.

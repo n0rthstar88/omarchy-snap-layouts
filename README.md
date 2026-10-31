@@ -90,7 +90,7 @@ Testing covered dragging by title bar and by a Hyprland mouse bind, snap assist,
 ## Troubleshooting
 
 - **The picker doesn't appear when dragging:** check `omarchy-shell snaplayouts drag status` says `on`, that the window is floating, and that the pointer reaches the top 30 pixels of the screen.
-- **Dragging a title bar does nothing, but Super+drag works:** the title bar plugin wasn't built with the [drag events patch](extras/hyprbars/README.md).
+- **Dragging a title bar does nothing, but Super+drag works:** the title bar plugin wasn't built with [the drag events](extras/hyprbars/README.md). `extras/hyprbars/rebuild-hyprbars.sh` adds them and warns if it can't.
 - **Windows overlap or leave gaps:** set `borderSize` to match your Hyprland border.
 - **`Target not found` from `omarchy-shell`:** the plugin isn't running. Check `omarchy plugin list`, then try `omarchy restart shell`.
 
@@ -108,6 +108,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
 
 ## License
 
-[MIT](LICENSE). The optional title bar patch changes BSD-licensed code from hyprland-plugins; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+[MIT](LICENSE). The optional title bar script builds BSD-licensed code from hyprland-plugins; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 This is an independent project. It isn't affiliated with or endorsed by Microsoft, Omarchy or the Hyprland project. Windows is a trademark of Microsoft Corporation, named here only to describe the style of the feature.
